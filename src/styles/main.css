@@ -47,5 +47,17 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
+    border-radius: 5%;
+    box-shadow: 0 0 10px 10px var(--color-terciario);
+}
+
+
+/* Media query para pantallas con un ancho de al menos 768px */
+@media (min-width: 768px) {
+    .banner img {
+        content: url(../img/banner\ web.jpeg);
+        padding: 2%;
+        border-radius: 15%;
+        box-shadow: 0 0 10px 10px var(--color-quinto);
+    }
 }
