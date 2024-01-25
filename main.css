@@ -1,0 +1,159 @@
+/* Paleta de colores */
+:root {
+    --color-primario: #BCDBF0;
+    --color-secundario: #98C1D9;
+    --color-terciario: #6969B3;
+    --color-cuaternario: #533A7B;
+    --color-quintanario: #4B244A;
+    --color-sexto: #C798D9;
+    --color-septimo: #D699CE;
+    --color-octavo: #E2B4D7;
+    --color-noveno: #D998A4;
+    --color-decimo: #B36995;
+    --color-onceavo: #9F7EA2;
+}
+
+/* Estilos generales */
+
+body {
+    background-color: #6969B3;
+    background-image: url(../img/banner\ mobile.jpeg);
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background-color: var(--color-primario);
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-cuaternario);
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--color-quintanario);
+}
+
+/* Sección de Descripción y Habilidades */
+
+#inicio {
+    background-color: var(--color-secundario);
+    padding: 2rem;
+    color: var(--color-cuaternario);
+}
+
+.habilidades {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.habilidad {
+    text-align: center;
+}
+
+.barra-progreso {
+    width: 70%;
+    /* Ajustar según habilidad */
+    height: 1rem;
+    background-color: var(--color-terciario);
+    margin-top: 0.5rem;
+}
+
+/* Banner con Imagen de Fondo */
+
+#banner {
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+    padding: 2rem;
+    text-align: center;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Formulario de Contacto */
+
+#contacto {
+    background-color: var(--color-octavo);
+    padding: 2rem;
+    color: var(--color-quintanario);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input,
+checkbox,
+textarea {
+    margin-top: 0.5rem;
+}
+
+button {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--color-cuaternario);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--color-sexto);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-top: 0.5rem;
+    }
+}
