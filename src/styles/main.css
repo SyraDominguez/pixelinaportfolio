@@ -35,7 +35,6 @@ h6 {
 }
 
 main {
-    display: flex;
     flex-direction: column;
     /* align-items: center; */
 }
@@ -66,7 +65,16 @@ body {
     box-shadow: 0 0 10px 10px var(--color-terciario);
 }
 
-#about-me>fieldset #bio {
+/* #about-me>fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
+
+*/ #about-me>fieldset #bio {
     text-align: justify;
 }
 
@@ -111,7 +119,7 @@ progress {
 .mostrar {
     position: absolute;
     top: 50%;
-    left: 85%;
+    left: 100%;
     transform: translate(-50%, -50%);
     font-weight: bold;
     opacity: 1;
@@ -121,9 +129,9 @@ progress {
 
 #skills>div {
     max-width: 1200px;
-    /* Puedes ajustar el valor según sea necesario */
     margin: 0 auto;
-    /* Centra el contenedor */
+    padding-left: 25%;
+
 }
 
 .barras-progreso {
@@ -148,18 +156,12 @@ progress {
 
 /* Media queries */
 
-@media (width <=471px) {
-    .barras-progreso {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
 
-    #about-me>fieldset #bio {
-        text-align: justify;
-    }
-}
+@media (width <=835px) {
+    #skills>div {
+        padding-left: 10%;
 
-@media (width < 700px) {
+    }
 
     @keyframes cargar {
         from {
@@ -167,23 +169,20 @@ progress {
         }
 
         to {
-            width: 65%;
+            width: 20%;
         }
     }
 
     .barras-progreso .barra span {
         position: absolute;
-        top: 75%;
-        left: 85%;
+        top: 81%;
+        left: 100%;
         transform: translate(-50%, -50%);
         font-weight: bold;
         opacity: 1;
         visibility: visible;
         animation: mostrarPorcentaje 1s linear 4.5s forwards;
-    }
 
-    #about-me>fieldset #bio {
-        text-align: justify;
     }
 }
 
@@ -251,5 +250,72 @@ progress {
         to {
             width: 90%;
         }
+    }
+}
+
+@media (width < 768px) {
+    #skills>div {
+        padding: 2%;
+
+    }
+
+    @keyframes cargar {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 50%;
+        }
+    }
+
+    .barras-progreso .barra span {
+        position: absolute;
+        top: 75%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        opacity: 1;
+        visibility: visible;
+        animation: mostrarPorcentaje 1s linear 4.5s forwards;
+    }
+}
+
+@media (width <=700px) {
+
+    @keyframes cargar {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 65%;
+        }
+    }
+
+    .barras-progreso .barra span {
+        position: absolute;
+        top: 75%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        opacity: 1;
+        visibility: visible;
+        animation: mostrarPorcentaje 1s linear 4.5s forwards;
+    }
+
+    #about-me>fieldset #bio {
+        text-align: justify;
+    }
+}
+
+@media (width <=490px) {
+    .barras-progreso {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #about-me>fieldset #bio {
+        text-align: justify;
     }
 }
