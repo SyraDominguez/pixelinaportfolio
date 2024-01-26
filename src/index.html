@@ -7,8 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Kanit:wght@300&family=New+Rocker&family=Orbitron&family=Single+Day&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <!-- <link rel="stylesheet" href="styles/nav_extend.css" /> -->
+
+
 
     <!-- <link rel="stylesheet" href="styles/navbar.css" /> -->
     <!-- <link rel="stylesheet" href="styles/footer.css" /> -->
@@ -25,21 +29,45 @@
           <span>developer</span>
         </h1>
       </div>
-      <input type="checkbox" id="menu-toggle" class="hidden-checkbox">
-      <label for="menu-toggle" class="menu-icon">
-        <img src="img/Menu_Def.png" alt="Menú Icono">
-      </label>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li><a href="#about-me">About Me</a></li>
-          <li><a class="btn" href="#">Purrryectos</a></li>
-          <li><a class="btn" href="#">Cursos</a></li>
-          <li><a href="#contact">Meow Me</a></li>
-        </ul>
-      </nav>
+      <div class="nav_hamburguer">
+        <input type="checkbox" id="menu-toggle" class="hidden-checkbox">
+        <label for="menu-toggle" class="menu-icon">
+          <img src="img/Menu_Def.png" alt="Menú Icono">
+        </label>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a class="btn" href="#">Purryectos</a></li>
+            <li><a class="btn" href="#">Cursos</a></li>
+            <li><a href="#contact">Meow Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <div class="nav_extend">
+        <nav>
+          <div class="logo">
+              <a href="#">Portfolio.</a>
+          </div>
+          <input type="checkbox" id="click">
+          <label for="click" class="mainicon">
+              <div class="menu">
+                  <i class="bi bi-list"></i>
+              </div>
+          </label>
+          <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div> -->
     </header>
     <main>
       <section class="banner">
+        <div class="overlay"></div>
         <img src="img/banner mobile.jpeg" alt="Banner Gatita Mobile" />
       </section>
 
@@ -57,7 +85,7 @@
                 </p>
 
                 <p> 
-                  Soy una pequeña gatita curiosa que, en su tercera vida, descubrió su pasión por las letras y las teclas de un ordenador. Decidí que mi cuarta vida estaría dedicada a compartir mis descubrimientos y aprendizajes, creando las webs más divertidas para gatitas y gatitos curiosos.
+                  Soy una pequeña gatita curiosa que, en su tercera vida, de tanto tumbarme encima del teclado de mi humana, descubrió su pasión por las letras y las teclas de un ordenador. Decidí que mi cuarta vida estaría dedicada a compartir mis descubrimientos y aprendizajes, creando las webs más divertidas para gatitas y gatitos curiosos.
                 </p>
                 
                 <p>
