@@ -10,7 +10,9 @@
     --color-septimo: #D998A4;
     --color-octavo: #B36995;
     --color-noveno: #9F7EA2;
-
+    --color-decimo: rgba(1, 1, 27, 0.7);
+    --color-undecimo: rgba(106, 106, 180, 0.2);
+    --hover: #ae69b3;
 }
 
 
@@ -43,9 +45,9 @@ body {
 
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
     align-items: center;
     justify-content: space-between;
-
     margin: 5%;
     background-color: var(--color-basico);
     color: var(--color-secundario);
@@ -143,8 +145,6 @@ progress {
 .barra {
     margin-bottom: 15px;
 }
-
-
 
 
 /* Media queries */
