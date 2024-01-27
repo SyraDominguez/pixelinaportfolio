@@ -9,6 +9,7 @@ a {
     z-index: 10;
     top: 0;
     width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -18,8 +19,14 @@ a {
 }
 
 .header__text {
-    display: none;
+    display: block;
 }
+
+.logo_text {
+    font-size: 3rem;
+    /* Tamaño de fuente base (ajústalo según tus necesidades) */
+}
+
 
 .menu-icon img {
     width: 100px;
@@ -93,7 +100,11 @@ a {
 
 /*Media Queries*/
 
-@media (width <500px) {
+@media (width <520px) {
+
+    .header__text {
+        display: none !important;
+    }
 
     .nav_hamburguer .header__nav {
         right: auto;
@@ -113,7 +124,9 @@ a {
     }
 }
 
-@media (width >=500px) {
+@media (max-width: 520px) {}
+
+@media (width >500px) {
     .header__text {
         display: flex;
         text-align: center;
@@ -143,11 +156,11 @@ a {
         /* Alinea la barra de navegación a la derecha */
         max-width: 80%;
         margin: auto;
-        padding: 1.4rem 1rem;
+        padding: 0.8rem 1rem;
         background-color: var(--color-undecimo);
         backdrop-filter: blur(10px);
         border-radius: 3rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         margin-right: 15px;
     }
 
@@ -166,7 +179,7 @@ a {
         overflow: hidden;
         margin-bottom: 0;
         display: flex;
-        /* Para alinear los elementos de la barra de navegación horizontalmente */
+
     }
 
     .menu_ext li {
@@ -214,5 +227,11 @@ a {
 
     #click_ext {
         display: none;
+    }
+}
+
+@media (width <=1350px) {
+    .logo_text {
+        font-size: 2.5rem;
     }
 }

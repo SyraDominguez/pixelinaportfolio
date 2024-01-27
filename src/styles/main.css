@@ -54,7 +54,11 @@ body {
     font-family: 'Kanit', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 20px;
+}
 
+.banner {
+    margin-top: 100px;
+    position: relative;
 }
 
 .banner img {
@@ -67,7 +71,9 @@ body {
 
 }
 
-
+#about-me {
+    scroll-margin-top: 100px;
+}
 
 #about-me>fieldset #bio {
     text-align: justify;
@@ -190,7 +196,6 @@ progress {
     #about-me,
     #contact {
         max-width: 1100px;
-        /* O ajusta según tus necesidades */
         width: 100%;
         margin: 0 auto;
     }
@@ -219,9 +224,8 @@ progress {
     #bio,
     #skills {
         flex: 1;
-        /* Ocupa el espacio disponible de manera igual para ambas secciones */
         padding: 0 30px;
-        /* Añade un poco de espacio entre las columnas */
+
     }
 
     #bio,
