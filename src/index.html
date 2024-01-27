@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+
 
 
 
@@ -63,7 +65,7 @@
       <section id="about-me">
         <fieldset>
           <legend>
-            <h2><strong>About Me</strong></h2>
+            <h2><strong>🐾 About Me 🐾</strong></h2>
           </legend>
     
             <section id="bio">
@@ -161,15 +163,106 @@
       </section >
 
       <section id="contact">
-        <div>
-          <fieldset>
+        <fieldset>
             <legend>
-              <h3><strong>Meow Me</strong></h3>
+                <h3><strong>🐾 Meow Me 🐾</strong></h3>
             </legend>
-          </fieldset>
-          <form action="#" method="post"></form>
-        </div>
-      </section>
+            <form action="#" method="post" class="form" id="contact-form">
+              
+                <div class="personal-data">
+                <label for="name"><h5>Nombre: <span>*</span></h5></label>
+                  <input type="text" id="name" name="name" class="name" placeholder="Nombre"  required>
+                </div>
+  
+                <div class="personal-data">
+                  <label for="surname"><h5>Apellidos: <span>*</span></h5></label>
+                  <input type="text" id="surname" name="surname" class="surname" placeholder="Apellidos"  required>
+                </div>
+  
+                <div class="personal-data">
+                  <label for="phone"><h5>Teléfono: <span>*</span></h5></label>
+                  <input type="tel" id="phone" name="phone" class="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Telefono: 111-111-111" required>
+                </div>
+  
+                <div class="personal-data">
+                  <label for="email"><h5>Correo Electrónico <span>*</span></h5></label>
+                  <input type="email" id="email" name="mail" class="mail" placeholder="email@email.com" required>
+                </div>
+  
+                <div class="personal-data">
+                  <label for="githubUsername"><h5>Usuario de Github</h5></label>
+                  <input type="text" id="githubUsername" name="githubUsername" class="githubUsername" pattern="^@[a-zA-Z0-9_]{1,15}$" placeholder="@username" required>
+                </div>
+              
+
+              <div class="options">
+                <h5>¿Cómo me conociste?</h5>
+                <div>
+                  <label id="keepcoding">
+                    <input type="radio" class="options-input" name="keepcoding" id="keepcoding" />
+                    <span>KeepCoding (Kick Off)</span>
+                  </label>
+                </div>
+                
+                <div>
+                  <label id="linkedin">
+                    <input type="radio" class="options-input" name="linkedin" id="linkedin" />
+                    <span>LinkedIn</span>
+                  </label>
+
+                  <div>
+                    <label id="github">
+                      <input type="radio" class="options-input" name="github" id="github" />
+                      <span>Github</span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label id="youtube">
+                      <input type="radio" class="options-input" name="youtube" id="youtube" />
+                      <span>YouTube</span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label id="rooftops">
+                      <input type="radio" class="options-input" name="rooftops" id="keepcorooftopsding" />
+                      <span>Por los tejados de Madrid</span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <label id="kitty">
+                      <input type="radio" class="options-input" name="kitty" id="kitty" />
+                      <span>Te habló de mi otro gatito</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-usuario">
+                <label for="moreInfo"><h5>Más información sobre ti</h5></label>
+                <div>
+                    <textarea id="moreInfo" name="moreInfo"                         placeholder="Cuentame cosas interesantes de ti, como porqué te gusta la programación o qué latas de comida blanda prefieres..."></textarea>
+                </div>
+              </div>
+            
+              <div class="newsleter">
+                <label class="newsleter">
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <span> Quiero recibir tu Newsletter</span>
+              </div>
+
+              <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+              </div>
+
+            </form>
+
+        </fieldset>
+    </section>
+    
 
     </main>
     <footer>

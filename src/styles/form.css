@@ -1,0 +1,180 @@
+#contact {
+    background-color: var(--color-decimo);
+    padding: 20px;
+}
+
+#contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#contact-form label {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="tel"],
+#contact-form input[type="email"],
+#contact-form input[type="text"]:focus,
+#contact-form input[type="tel"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus,
+#contact-form textarea,
+#contact-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-primario);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-decimo);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: var(--color-quinto);
+}
+
+#contact-form ::placeholder {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--color-basico);
+}
+
+#contact-form .options {
+    grid-column: span 2;
+    margin-top: 20px;
+
+}
+
+#contact-form .options h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact-form .options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form .options .options-input {
+    margin-right: 10px;
+}
+
+#contact-form .options span {
+    font-size: 12px;
+}
+
+#contact-form .info-usuario {
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+#contact-form .options h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact-form .options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form .options .options-input {
+    margin-right: 10px;
+}
+
+#contact-form .options span {
+    font-size: 12px;
+}
+
+#contact-form .info-usuario label {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact-form .info-usuario textarea {
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    border: 1px solid var(--color-primario);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact-form .newsleter {
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+#contact-form .newsleter label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact-form .newsleter input {
+    margin-right: 10px;
+}
+
+#contact-form .buttons {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+#contact-form .buttons button {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: var(--color-undecimo);
+    border-radius: 3rem;
+    border: none;
+    color: var(--color-cuaternario);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#contact-form .buttons button:last-child {
+    margin-right: 0;
+}
+
+#contact-form .buttons button:hover {
+    color: var(--color-sexto);
+    background-color: rgba(12, 2, 54, 0.65);
+    /* box-shadow: 0px 1px 10px 10px var(--color-basico); */
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); */
+    transition: all .3s ease-in-out;
+    font-size: large;
+}
+
+#contact-form .buttons button:hover {
+    color: #87e895;
+}
+
+#contact-form .buttons button[type="submit"] {
+    background-color: var(--color-quinto);
+    color: var(--color-decimo);
+}
+
+#contact-form .buttons button[type="submit"]:hover {
+    background-color: var(--color-sexto);
+    color: #377cea;
+    box-shadow: 0px 1px 10px 10px var(--color-basico);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5);
+}

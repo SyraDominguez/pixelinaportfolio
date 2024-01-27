@@ -57,6 +57,8 @@ body {
 }
 
 .banner {
+    width: 80%;
+    margin: 0 auto;
     margin-top: 100px;
     position: relative;
 }
@@ -154,7 +156,12 @@ progress {
 
 
 /* Media queries */
-
+@media (width >=1200px) {
+    .banner {
+        width: 100%;
+        /* Restaurar el ancho al 100% en pantallas más pequeñas */
+    }
+}
 
 @media (width <=835px) {
     #skills>div {
