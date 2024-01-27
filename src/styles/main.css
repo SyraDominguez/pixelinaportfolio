@@ -73,9 +73,12 @@ body {
 
 }
 
-#about-me {
+#about-me,
+#contact {
     scroll-margin-top: 100px;
 }
+
+
 
 #about-me>fieldset #bio {
     text-align: justify;
@@ -159,7 +162,7 @@ progress {
 @media (width >=1200px) {
     .banner {
         width: 100%;
-        /* Restaurar el ancho al 100% en pantallas más pequeñas */
+
     }
 }
 
