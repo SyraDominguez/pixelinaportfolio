@@ -197,7 +197,7 @@ progress {
 
 @media (width >=768px) {
     .banner img {
-        content: url(../img/banner\ web.jpeg);
+        content: url(../img/banner1.jpeg);
         padding: 2%;
         border-radius: 15%;
         box-shadow: 0 0 10px 10px var(--color-quinto);
