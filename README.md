@@ -57,7 +57,7 @@ Bienvenidos al repositorio de Pixelina BellaScript, la gatita desarrolladora. Es
 
 Si quieres contribuir a Pixelina BellaScript, ¡estamos encantadas de recibir colaboraciones y latitas de atún!
 
-Abre un problema (issue) o envía una solicitud de extracción (pull request).
+You know: issue o pull request.
 
 ## Contacto
 
