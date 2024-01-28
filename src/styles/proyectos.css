@@ -122,7 +122,6 @@
 .portfolio-item:hover,
 .portfolio-item:active {
     transform: scale(1.2);
-    /* Ajusta el valor según sea necesario */
     transition: transform 0.3s ease-in-out;
     z-index: 1;
 }

@@ -158,8 +158,6 @@
 #contact-form .buttons button:hover {
     color: var(--color-sexto);
     background-color: rgba(12, 2, 54, 0.65);
-    /* box-shadow: 0px 1px 10px 10px var(--color-basico); */
-    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5); */
     transition: all .3s ease-in-out;
     font-size: large;
 }

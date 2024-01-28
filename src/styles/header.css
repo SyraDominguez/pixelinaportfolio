@@ -152,7 +152,6 @@ a {
     .nav_extend {
         display: flex;
         justify-content: flex-end;
-        /* Alinea la barra de navegación a la derecha */
         max-width: 80%;
         margin: auto;
         padding: 0.8rem 1rem;
